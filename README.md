@@ -1,17 +1,20 @@
 sql-countries
 =============
 
-The `countries.sql` file is a SQL script which creates a table containing
+The `countries.sql` file is an SQL script which creates a table containing
 a list of countries, their ISO codes, an indicator of using the metric system,
 ordering of fields in date strings and if they are using the 24 hour time
 system.
 
-This is a somewhat "lazy" list with regards to date and time orderings,
+This is a somewhat "lazy" list, mostly with regards to date and time formats,
 created using the following guidelines:
 
- * Use DMY as the default, even for countries which officially offer a choice
-   of other systems (i.e. if a country standardizes both DMY and YMD, use DMY)
- * Use 24 as the default if a country standardizes on both 24h and 12h time
+ * Use a relatively common-sense list of countries, not necessarily very
+   official (e.g. this list contains Taiwan, Hong Kong and Myanmar...).
+ * Use DMY as the default date format, even for countries which officially
+   offer a choice of other formats (i.e. if a country standardizes both
+   DMY and YMD, use DMY).
+ * Use 24 as the default if a country standardizes on both 24h and 12h time.
 
 The rest of the data are official and unambigous.
 
